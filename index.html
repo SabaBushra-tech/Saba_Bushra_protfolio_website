@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saba Bushra | Portfolio</title>
+    <title>Home</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap"
         rel="stylesheet">
@@ -37,13 +37,13 @@
       border-bottom: 3px solid rgb(71, 70, 70);
       padding-bottom: 4px;
     }
-/* what i don er nicher text */
+/* what i do er nicher text */
     .what-i-do .subtitle {
       font-size: 20px;
       color: #4a4a4b;
       line-height: 1.7;
       margin: 16px 0 40px;
-      max-width: 680px;
+      max-width: 1200px;
     }
 
     .what-i-do .subtitle a {
@@ -64,7 +64,7 @@
 
 /* each card*/
     .card {
-      border: 1px solid #e2e8f0;
+      border: 1px solid #2a2a2b;
       border-radius: 8px;
       padding: 36px 28px;
       transition: box-shadow 0.3s ease, border-color 0.3s ease;
@@ -72,7 +72,7 @@
 
     .card:hover {
       box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-      border-color:palevioletred;
+      border-color:rgb(185, 42, 90);
     }
 
  /* icon */
@@ -118,15 +118,162 @@
       /* color: #fff; */
     }
 
-/* RESPONSIVE: 2 columns on tablet */
+/* responsive: 2 columns on tablet */
     @media (max-width: 720px) {
       .services-grid { grid-template-columns: repeat(2, 1fr); }
     }
 
-/* RESPONSIVE: 1 column on mobile */
+/* responsive: 1 column on mobile */
     @media (max-width: 480px) {
       .services-grid { grid-template-columns: 1fr; }
       .what-i-do h2 { font-size: 28px; }
+    }
+
+/* style for testimonial */
+
+   * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #fff;
+      color: #2d3748;
+    }
+
+    /* section */
+    .testimonials {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 80px 40px;
+    }
+
+    /* heading */
+    .testimonials h2 {
+      font-size: 50px;
+      font-weight: 700;
+      color:  #1a202c;
+      display: inline-block;
+      border-bottom: 3px solid  rgb(71, 70, 70);
+      padding-bottom: 4px;
+      margin-bottom: 20px;
+    }
+
+    /* subtitle */
+    .testimonials .subtitle {
+      font-size: 20px;
+      color:  #4a4a4b;
+      line-height: 1.7;
+      max-width: 1200px;
+      margin-bottom: 48px;
+    }
+
+    /* slider container */
+    .slider-wrapper {
+      overflow: hidden;       
+    }
+
+    .slider-track {
+      display: flex;
+      gap: 24px;
+      transition: transform 0.4s ease;  /* smooth slide animation */
+    }
+
+    /* each card */
+    .card {
+      min-width: calc(33.333% - 16px);  /* 3 cards visible */
+      border: 1px solid #cacdd1;
+      border-radius: 10px;
+      padding: 32px 28px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: box-shadow 0.3s;
+    }
+
+    .card:hover {
+      box-shadow: 0 6px 24px rgba(0,0,0,0.09);
+      border-color: rgb(165, 69, 85);
+    }
+
+  /* next quote */
+    .card .quote {
+      font-size: 17px;
+      color: #4a5568;
+      font-style: italic;
+      line-height: 1.8;
+      margin-bottom: 28px;
+      flex: 1;
+    }
+
+   
+    .card .avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 14px;
+      border: 3px solid #abb9cb;
+      background: #e2e8f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px; 
+      overflow: hidden;
+    }
+
+    .card .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* name */
+    .card .name {
+      font-size: 15px;
+      font-weight: 700;
+      color: #1a202c;
+      margin-bottom: 4px;
+    }
+
+    /* role */
+    .card .role {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #a0aec0;
+    }
+
+    /* dots */
+    .dots {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 36px;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #cbd5e0;
+      cursor: pointer;
+      border: none;
+      transition: background 0.3s;
+    }
+
+    .dot.active {
+      background: #38b2ac;
+    }
+
+    /* responsive */
+    @media (max-width: 768px) {
+      .card { min-width: calc(50% - 12px); }
+    }
+
+    @media (max-width: 500px) {
+      .card { min-width: 100%; }
+      .testimonials { padding: 60px 20px; }
     }
 
     </style>
@@ -171,42 +318,7 @@
     </section>
 
 
-    <!-- <section class="optimized-content">
-        <div class="optimized-container">
-            <div class="optimized-info">
-                <h2>Optimized Content</h2>
-                <p>I create SEO-optimized, high-quality content that ranks on search engines and drives organic traffic.
-                    My approach combines data-driven strategy with compelling storytelling.</p>
 
-
-            </div>
-
-            <div class="blog-cards">
-                <div class="blog-card">
-                    <div class="blog-img">
-                        <img src="images/Brand-name.jpg" alt="SEO Blog">
-                    </div>
-                    <div class="blog-details">
-                        <h3>The Power of Branding.</h3>
-                        <p>Branding is the personality of your business. It is far more than a logo or tagline ...</p>
-                        <a href="#" class="read-more">READ MORE →</a>
-                    </div>
-
-                </div>
-
-                <div class="blog-card">
-                    <div class="blog-img">
-                        <img src="images/blog.png" alt="Design Systems">
-                    </div>
-                    <div class="blog-details">
-                        <h3>The power of website theme in modern web design</h3>
-                        <p>Theme are the backbone of every modern wordpress website.Think...</p>
-                        <a href="#" class="read-more">READ MORE →</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
 <section class="what-i-do">
 
@@ -215,7 +327,7 @@
 
   <!-- Subtitle -->
   <p class="subtitle">
-    I have more than 10 years' experience building software for clients all over the world.
+    I have more than 3 years' experience building software for clients all over the world.
     Below is a quick overview of my main technical skill sets and technologies I use.
     Want to find out more about my experience? Check out my
     <a href="#">online resume</a> and <a href="#">project portfolio</a>.
@@ -298,6 +410,121 @@
 
 </section>
 
+
+
+
+<section class="testimonials">
+
+  <!-- Heading -->
+  <h2>Testimonials</h2>
+
+  <!-- Subtitle -->
+  <p class="subtitle">
+    What my clients say about me and my work. I'm proud to have helped businesses
+    and individuals build beautiful, fast, and professional websites using WordPress,
+    HTML, CSS, and more.
+  </p>
+
+  <!-- Slider -->
+  <div class="slider-wrapper">
+    <div class="slider-track" id="sliderTrack">
+
+      <!-- Card 1 -->
+      <div class="card">
+        <p class="quote">"Bushra is absolutely amazing! She built my WordPress website from scratch — clean, fast, and exactly what I wanted. Very professional and delivered on time. Highly recommended!"</p>
+        <div class="avatar">👤</div>
+        <p class="name">Abdul Kulafa</p>
+        <p class="role">Upwork Client</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <p class="quote">"Bushra is a world-class WordPress developer. She redesigned my business site with Elementor and the result was stunning. So patient, friendly, and skilled. Thank you so much Bushra! 👏✨"</p>
+        <div class="avatar">👤</div>
+        <p class="name">Priority Air Comfort</p>
+        <p class="role">Project Manager</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <p class="quote">"I'm lucky to work with such a true talent. Bushra handled my WooCommerce store setup perfectly — SEO-friendly, mobile responsive, and beyond expectations. Keep up the amazing work!"</p>
+        <div class="avatar">👤</div>
+        <p class="name">Ismail Salim</p>
+        <p class="role">United Arab Emirates</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card">
+        <p class="quote">"Best freelancer I've ever worked with for web development. Bushra fixed all my HTML and CSS issues quickly and made my site look so professional. Will hire again for sure!"</p>
+        <div class="avatar">👤</div>
+        <p class="name">Sarah Mitchell</p>
+        <p class="role">Small Business Owner</p>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card">
+        <p class="quote">"Bushra built my Shopify store and optimized it for SEO. Sales have improved a lot since the launch. She really knows what she's doing. Very responsive and easy to work with. 5 stars!"</p>
+        <div class="avatar">👤</div>
+        <p class="name">James Okafor</p>
+        <p class="role">eCommerce Seller</p>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="card">
+        <p class="quote">"Bushra converted my Figma design to WordPress perfectly — pixel-perfect! She is very skilled in HTML, CSS, and Elementor. Communication was great throughout the project. 100% recommend!"</p>
+        <div class="avatar">👤</div>
+        <p class="name">Lena Hoffmann</p>
+        <p class="role">UI Designer, Germany</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Dots -->
+  <div class="dots" id="dots"></div>
+
+</section>
+<script>
+  const track = document.getElementById('sliderTrack');
+  const dotsContainer = document.getElementById('dots');
+  const cards = Array.from(track.querySelectorAll('.card'));
+  const totalSlides = Math.ceil(cards.length / 3);
+  let current = 0;
+
+  // Create dots
+  for (let i = 0; i < totalSlides; i++) {
+    const dot = document.createElement('button');
+    dot.classList.add('dot');
+    if (i === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => goTo(i));
+    dotsContainer.appendChild(dot);
+  }
+
+  function goTo(index) {
+    current = index;
+
+    // Get the full width of one card INCLUDING gap
+    const cardStyle = window.getComputedStyle(cards[0]);
+    const cardWidth = cards[0].offsetWidth + 24; // 24 = gap
+
+    // Move by 3 cards at a time
+    track.style.transform = `translateX(-${current * 3 * cardWidth}px)`;
+
+    // Update dots
+    document.querySelectorAll('.dot').forEach((d, i) => {
+      d.classList.toggle('active', i === current);
+    });
+  }
+
+  // Auto slide every 4 seconds
+  setInterval(() => {
+    goTo((current + 1) % totalSlides);
+  }, 4000);
+</script>
+
+
+
+
     <footer class="main-footer">
         <div class="footer-container">
             <div class="footer-brand">
@@ -335,7 +562,7 @@
                 <div class="footer-col">
                     <h4>FOLLOW</h4>
                     <ul>
-                        <li><a href="https://www.linkedin.com/in/sumiya-akther-bushra-373bb9369/"">LinkedIn</a></li>
+                        <li><a href="https://www.linkedin.com/in/sumiya-akther-bushra-373bb9369/">LinkedIn</a></li>
                         <li><a href="https://github.com/SabaBushra-tech">GitHub</a></li>
                         <li><a href="https://dribbble.com/webfluxx">Dribbble</a></li>
                         <li><a href="https://www.facebook.com/profile.php?id=61579808576117">Facebook</a></li>

@@ -1,0 +1,267 @@
+:root {
+      --navy: #1a2744;
+      --gold: #c9a84c;
+      --light-gold: #e8d5a3;
+      --text: #2d3748;
+      --muted: #718096;
+      --light: #f7f8fa;
+      --border: #e2e8f0;
+      --white: #ffffff;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Source Sans 3', sans-serif;
+      background: var(--light);
+      color: var(--text);
+      font-size: 15px;
+    }
+
+
+    /* ── HERO HEADER ── */
+    .hero {
+      background:rgb(216, 195, 199);
+      color:rgb(15, 15, 15);
+      padding-top: 100px;    /* Decrease this number */
+    padding-bottom: 100px; /* Decrease this number */
+    min-height: auto;
+      /* padding-top: 5px;
+      padding-bottom: 5px; */
+    }
+    .hero .label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color:rgb(74, 72, 72);
+      /* margin-bottom: 5px; */
+    }
+    .hero-inner {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    .hero-photo {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      border: 3px solid var(--gold);
+      overflow: hidden;
+      flex-shrink: 0;
+      background: #38393b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      color: #d5d5d6;
+    }
+    .hero-photo img { width: 100%; height: 100%; object-fit: cover; }
+    .hero-info h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 5px;
+    }
+    .hero-info .dept {
+      font-size: 15px;
+      color: #5c5d5f;
+      line-height: 1.5;
+    }
+    .hero-info .dept strong {
+      color: rgb(96, 94, 94);
+      font-weight: 600;
+    }
+
+    /* ── MAIN CONTENT ── */
+    .page { max-width: 1200px; margin: 0 auto; padding: 0 0 60px; }
+
+    /* ── SECTION BLOCK ── */
+    .section {
+      background: var(--white);
+      margin: 16px 0;
+      padding: 28px 24px;
+
+    }
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 6px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--gold);
+      display: inline-block;
+    }
+    .section-subtitle {
+      font-size: 13px;
+      color: var(--muted);
+      margin: 10px 0 20px;
+      line-height: 1.6;
+    }
+
+    /* ── TIMELINE (Education) ── */
+    .timeline { 
+        padding-left: 0;
+        /* width: 100%; */
+     }
+    .timeline-item {
+      display: flex;
+      gap: 16px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .timeline-item:last-child { border-bottom: none; }
+    .timeline-year {
+      font-size: 11px;
+      color: var(--gold);
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      min-width: 72px;
+      padding-top: 3px;
+    }
+    .timeline-content h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 2px;
+    }
+    .timeline-content .institution {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .timeline-content p {
+      font-size: 13px;
+      color: #718096;
+      line-height: 1.6;
+    }
+
+    /* ── SKILLS ── */
+    .skills-intro {
+      font-size: 13px;
+      color: var(--muted);
+      font-style: italic;
+      margin-bottom: 18px;
+      line-height: 1.6;
+    }
+    .skill-item {
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .skill-item:last-child { border-bottom: none; }
+    .skill-item h4 {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 4px;
+    }
+    .skill-item p {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    .skill-tag {
+      display: inline-block;
+      background: #eef2f8;
+      color: var(--navy);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      padding: 2px 8px;
+      border-radius: 3px;
+      margin-right: 4px;
+      margin-bottom: 6px;
+    }
+
+    /* ── ACADEMIC RESULTS TABLE ── */
+    .results-intro {
+      font-size: 13px;
+      color:rgb(49, 47, 47);
+      font-style: italic;
+      margin-bottom: 18px;
+    }
+    .results-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    .results-table thead tr {
+      background: rgb(35, 34, 34);
+      color: var(--white);
+    }
+    .results-table th {
+      padding: 10px 12px;
+      text-align: left;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .results-table td {
+      padding: 12px 12px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text);
+      vertical-align: top;
+    }
+    .results-table tr:last-child td { border-bottom: none; }
+    .results-table tr:nth-child(even) td { background: #f9fafb; }
+    .results-table .degree {
+      font-weight: 600;
+      color: var(--navy);
+      display: block;
+    }
+    .results-table .sub {
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    /* ── QUOTE BLOCK ── */
+    .quote-block {
+      background:#e1dbdb;
+      padding: 36px 28px;
+      margin: 16px 0;
+    }
+    .quote-block blockquote {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px;
+      font-style: italic;
+      color: black;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      position: relative;
+      padding-left: 20px;
+      border-left: 3px solid var(--gold);
+    }
+    .quote-block .quote-author {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    /* ── SOCIAL ROW ── */
+    .social-row {
+      background: var(--white);
+      padding: 20px 24px;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      border-top: 1px solid var(--border);
+    }
+    .social-row a {
+      color: var(--muted);
+      font-size: 12px;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      transition: color 0.2s;
+    }
+    .social-row a:hover { color: var(--navy); }
+    .social-row a i { font-size: 18px; }
