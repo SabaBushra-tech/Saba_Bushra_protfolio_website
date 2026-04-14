@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saba Bushra | Portfolio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+            * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #fff;
+      color: #2d3748;
+    }
+
+/* section warppar*/
+    .what-i-do {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 80px 40px;
+    }
+
+/* heading */
+    .what-i-do h2 {
+      font-size: 50px;
+      font-weight: 700;
+      color: #1a202c;
+      margin-bottom: 6px;
+
+      /* underline*/
+      display: inline-block;
+      border-bottom: 3px solid rgb(71, 70, 70);
+      padding-bottom: 4px;
+    }
+/* what i don er nicher text */
+    .what-i-do .subtitle {
+      font-size: 20px;
+      color: #4a4a4b;
+      line-height: 1.7;
+      margin: 16px 0 40px;
+      max-width: 680px;
+    }
+
+    .what-i-do .subtitle a {
+      color: rgb(201, 64, 110);
+      text-decoration: none;
+    }
+    .what-i-do .subtitle a:hover {
+      text-decoration: underline;
+    }
+
+ /* grid*/
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 columns */
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+
+/* each card*/
+    .card {
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 36px 28px;
+      transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      border-color:palevioletred;
+    }
+
+ /* icon */
+    .card .icon {
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+
+/* card er title */
+    .card h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #1a202c;
+      margin-bottom: 8px;
+    }
+
+/* card text */
+    .card p {
+      font-size: 17px;
+      color: #718096;
+      line-height: 1.6;
+    }
+
+/* button */
+    .btn-wrap {
+      text-align: center;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 32px;
+      border: 2px solid #656565;
+      border-radius: 50px;
+      color: #151515;
+      font-size: 17px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: rgb(235, 202, 213);
+      /* color: #fff; */
+    }
+
+/* RESPONSIVE: 2 columns on tablet */
+    @media (max-width: 720px) {
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+/* RESPONSIVE: 1 column on mobile */
+    @media (max-width: 480px) {
+      .services-grid { grid-template-columns: 1fr; }
+      .what-i-do h2 { font-size: 28px; }
+    }
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/SB_logo.jpeg" alt="Saba Bushra Logo">
+            </a>
+            <h2 class="brand-name">Saba Bushra</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog_page.html">Blog</a></li>
+        </ul>
+        <a href="resume.html" class="resume-btn">RESUME</a>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Saba Bushra</h1>
+
+            <!-- <span class="category">COMPUTER SCIENCE STUDENT</span> -->
+
+            <h2 class="hero-tagline">"YOUR WEB, MY PASSION"<br></h2>
+            <p>I am Bushra, a Computer Science student and aspiring Web Developer with expertise in WordPress, HTML, CSS, and JavaScript, dedicated to crafting interactive, functional, and visually engaging web experiences from innovative ideas.</p>
+
+            <div class="hero-btns">
+                <button class="btn-black">View Projects</button>
+                <a href="#" class="btn-contact">Get in touch →</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/bushra_pic.jpg" alt="Bushra_profile">
+        </div>
+    </section>
+
+
+    <!-- <section class="optimized-content">
+        <div class="optimized-container">
+            <div class="optimized-info">
+                <h2>Optimized Content</h2>
+                <p>I create SEO-optimized, high-quality content that ranks on search engines and drives organic traffic.
+                    My approach combines data-driven strategy with compelling storytelling.</p>
+
+
+            </div>
+
+            <div class="blog-cards">
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="images/Brand-name.jpg" alt="SEO Blog">
+                    </div>
+                    <div class="blog-details">
+                        <h3>The Power of Branding.</h3>
+                        <p>Branding is the personality of your business. It is far more than a logo or tagline ...</p>
+                        <a href="#" class="read-more">READ MORE →</a>
+                    </div>
+
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="images/blog.png" alt="Design Systems">
+                    </div>
+                    <div class="blog-details">
+                        <h3>The power of website theme in modern web design</h3>
+                        <p>Theme are the backbone of every modern wordpress website.Think...</p>
+                        <a href="#" class="read-more">READ MORE →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+<section class="what-i-do">
+
+  <!-- Heading -->
+  <h2>What I do</h2>
+
+  <!-- Subtitle -->
+  <p class="subtitle">
+    I have more than 10 years' experience building software for clients all over the world.
+    Below is a quick overview of my main technical skill sets and technologies I use.
+    Want to find out more about my experience? Check out my
+    <a href="#">online resume</a> and <a href="#">project portfolio</a>.
+  </p>
+
+  <!-- Cards Grid -->
+  <div class="services-grid">
+
+    <!-- 1 -->
+    <div class="card">
+      <div class="icon">🖥️</div>
+      <h3>Website Development</h3>
+      <p>Website development focused on building fast, secure, and scalable websites that deliver strong performance and a smooth user experience.</p>
+    </div>
+
+    <!-- 2 -->
+    <div class="card">
+      <div class="icon">🎨</div>
+      <h3>Web UI Design</h3>
+      <p>Web UI Design focuses on creating clean, user-friendly interfaces that improve usability, engagement, and overall user experience across all devices.</p>
+    </div>
+
+    <!-- 3 -->
+    <div class="card">
+      <div class="icon">⚡</div>
+      <h3>Elementor Website Dev.</h3>
+      <p>An Elementor Website Developer builds fast, responsive, and visually engaging WordPress websites using advanced Elementor customization.</p>
+    </div>
+
+    <!-- 4 -->
+    <div class="card">
+      <div class="icon">💡</div>
+      <h3>Digital Branding</h3>
+      <p>Digital branding builds a consistent online identity through visual design, messaging, and strategy that strengthens trust and brand recognition.</p>
+    </div>
+
+    <!-- 5 -->
+    <div class="card">
+      <div class="icon">🌐</div>
+      <h3>WordPress Website Dev.</h3>
+      <p>A WordPress Website Developer builds secure, fast, and scalable websites tailored to business goals using custom themes, plugins, and best practices.</p>
+    </div>
+
+ <!-- 6 -->
+    <div class="card">
+      <div class="icon">🔍</div>
+      <h3>SEO Optimization</h3>
+      <p>SEO optimization improves website visibility, search rankings, and organic traffic through technical improvements, content optimization, and performance.</p>
+    </div>
+
+
+    <!-- 7 -->
+    <div class="card">
+      <div class="icon">🖌️</div>
+      <h3>Figma To WordPress</h3>
+      <p>Convert Figma designs into fully functional, responsive WordPress websites with pixel-perfect accuracy and seamless user experience.</p>
+    </div>
+
+    <!-- 8 -->
+    <div class="card">
+      <div class="icon">🔒</div>
+      <h3>Website Security Add</h3>
+      <p>Website Security protects your site from hacks, malware, and vulnerabilities, ensuring safe, reliable, and trustworthy online performance.</p>
+    </div>
+
+    <!-- 9 -->
+    <div class="card">
+      <div class="icon">⚙️</div>
+      <h3>Custom Website Dev.</h3>
+      <p>Professional custom website development creating unique, responsive, and high-performing websites tailored to your business needs.</p>
+    </div>
+
+
+  </div>
+
+  <!-- Button -->
+  <div class="btn-wrap">
+    <a href="#" class="btn">Services &amp; Pricing</a>
+  </div>
+
+</section>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2 class="footer-brand-name">Saba Bushra</h2>
+                <p class="brand-desc">Turning ideas into interactive digital solutions</p>
+
+            </div>
+
+            <div class="footer-nav-group">
+                <div class="footer-col">
+                    <h4>NAVIGATION</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="project.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog_page.html">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Let's message me</h4>
+                    <div class="">
+                    <input type="text" name="" id="" placeholder="Your Name">
+                </div>
+                <div class="">
+                    <input type="text" name="" id="" placeholder="Your Email">
+                </div>
+                <div class="">
+                    <textarea rows="10" name="" id="" placeholder="Message"></textarea>
+                </div>
+                <input class="btn-submit" type="submit" value="Submit">
+                </div>
+
+                <div class="footer-col">
+                    <h4>FOLLOW</h4>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/sumiya-akther-bushra-373bb9369/"">LinkedIn</a></li>
+                        <li><a href="https://github.com/SabaBushra-tech">GitHub</a></li>
+                        <li><a href="https://dribbble.com/webfluxx">Dribbble</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=61579808576117">Facebook</a></li>
+                        <li><a href="https://www.behance.net/sababushra">Behance</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>© 2024 SABA BUSHRA. ALL RIGHTS RESERVED.</p>
+                <div class="legal-links">
+                    <a href="#">PRIVACY POLICY</a>
+                    <a href="#">TERMS OF SERVICE</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
