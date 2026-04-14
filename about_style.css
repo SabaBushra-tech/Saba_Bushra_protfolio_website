@@ -19,15 +19,13 @@
     }
 
 
-    /* ── HERO HEADER ── */
+    /* hero section */
     .hero {
-      background:rgb(216, 195, 199);
+      background:#e1dbdb;
       color:rgb(15, 15, 15);
-      padding-top: 100px;    /* Decrease this number */
-    padding-bottom: 100px; /* Decrease this number */
+      padding-top: 100px;   
+    padding-bottom: 100px;
     min-height: auto;
-      /* padding-top: 5px;
-      padding-bottom: 5px; */
     }
     .hero .label {
       font-size: 10px;
@@ -35,7 +33,6 @@
       letter-spacing: 2.5px;
       text-transform: uppercase;
       color:rgb(74, 72, 72);
-      /* margin-bottom: 5px; */
     }
     .hero-inner {
       display: flex;
@@ -73,11 +70,9 @@
       color: rgb(96, 94, 94);
       font-weight: 600;
     }
-
-    /* ── MAIN CONTENT ── */
     .page { max-width: 1200px; margin: 0 auto; padding: 0 0 60px; }
 
-    /* ── SECTION BLOCK ── */
+    /* section block */
     .section {
       background: var(--white);
       margin: 16px 0;
@@ -101,10 +96,9 @@
       line-height: 1.6;
     }
 
-    /* ── TIMELINE (Education) ── */
+    /* timeline(education) */
     .timeline { 
         padding-left: 0;
-        /* width: 100%; */
      }
     .timeline-item {
       display: flex;
@@ -140,11 +134,11 @@
       line-height: 1.6;
     }
 
-    /* ── SKILLS ── */
+  /* skills */
     .skills-intro {
-      font-size: 13px;
-      color: var(--muted);
-      font-style: italic;
+      font-size: 18px;
+      color: rgb(24, 23, 23);
+      font-style: normal;
       margin-bottom: 18px;
       line-height: 1.6;
     }
@@ -153,22 +147,12 @@
       border-bottom: 1px solid var(--border);
     }
     .skill-item:last-child { border-bottom: none; }
-    .skill-item h4 {
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--navy);
-      margin-bottom: 4px;
-    }
-    .skill-item p {
-      font-size: 13px;
-      color: var(--muted);
-      line-height: 1.5;
-    }
+
     .skill-tag {
       display: inline-block;
       background: #eef2f8;
-      color: var(--navy);
-      font-size: 10px;
+      color:rgb(23, 22, 22);
+      font-size: 15px;
       font-weight: 600;
       letter-spacing: 0.5px;
       padding: 2px 8px;
@@ -177,7 +161,7 @@
       margin-bottom: 6px;
     }
 
-    /* ── ACADEMIC RESULTS TABLE ── */
+    /* academic results table */
     .results-intro {
       font-size: 13px;
       color:rgb(49, 47, 47);
@@ -204,14 +188,14 @@
     .results-table td {
       padding: 12px 12px;
       border-bottom: 1px solid var(--border);
-      color: var(--text);
+      color: rgb(24, 24, 24);
       vertical-align: top;
     }
     .results-table tr:last-child td { border-bottom: none; }
     .results-table tr:nth-child(even) td { background: #f9fafb; }
     .results-table .degree {
       font-weight: 600;
-      color: var(--navy);
+      color: rgb(36, 34, 34);
       display: block;
     }
     .results-table .sub {
@@ -219,7 +203,7 @@
       color: var(--muted);
     }
 
-    /* ── QUOTE BLOCK ── */
+    /* footer er ager ta */
     .quote-block {
       background:#e1dbdb;
       padding: 36px 28px;
@@ -243,25 +227,3 @@
       text-transform: uppercase;
       color: var(--gold);
     }
-
-    /* ── SOCIAL ROW ── */
-    .social-row {
-      background: var(--white);
-      padding: 20px 24px;
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-      border-top: 1px solid var(--border);
-    }
-    .social-row a {
-      color: var(--muted);
-      font-size: 12px;
-      text-decoration: none;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 4px;
-      transition: color 0.2s;
-    }
-    .social-row a:hover { color: var(--navy); }
-    .social-row a i { font-size: 18px; }
